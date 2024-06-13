@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://kit.fontawesome.com/f070526115.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="warning_wrapper position">
+            <div class="copySucess ">
+                <div><i class="fa-solid fa-check"></i></i></div>
+                <div>Copied.</div>
+                <div ><i class="fas fa-times-circle "></i></div>
+            </div>
+        </div>
+
+        <div class="warning_wrapper position">
+            <div class="copyFail ">
+                <div><i class="fas fa-exclamation-circle"></i></div>
+                <div>Generate Password Frist.</div>
+                <div ><i class="fas fa-times-circle "></i></div>
+            </div>
+        </div>
+
+        <div class="warning_wrapper position">
+            <div class="passGenerateFail copyFail ">
+                <div><i class="fas fa-exclamation-circle"></i></div>
+                <div>Select Any one Checkbox.</div>
+                <div ><i class="fas fa-times-circle "></i></div>
+            </div>
+        </div>
+
+
+
+        <div>
+            <h1 class="title">PASSWORD GENERATOR</h1>
+        </div>
+        <div class="passwordAndCopy">
+            <div class="displayPasswordInput">a</div>
+            <button class="logo copyBtn"> <i class="fa-regular fa-copy"></i></button>
+           
+        </div>
+        <div class="passLenAndValue">
+            <div>Password Length</div>
+            <div class="displayPasswordLength"></div>
+        </div>
+
+        <div class=wrapperOfSlider>
+            <div class="range">
+              <input class="slider" type="range" min="1" max="20" id="range" /> 
+            </div>
+          </div>
+
+
+
+        <div class="allCheckBoxesDiv">
+            <div>
+                <input class="checkBoxes" type="checkbox" name="" id="upperCase">
+                <label for="upperCase">Include UpperCase</label>
+            </div>
+            <div>
+                <input class="checkBoxes" type="checkbox" name="" id="lowercase">
+                <label for="lowercase">Include LowerCase</label>
+            </div>
+            <div>
+                <input class="checkBoxes" type="checkbox" name="" id="number">
+                <label for="number">Include Numbers</label>
+            </div>
+            <div>
+                <input class="checkBoxes" type="checkbox" name="" id="symbol">
+                <label for="symbol">Include symbols</label>
+            </div>
+        </div>
+        <div class="strengthAndIndicator">
+            <div class="textStrength">Strength</div>
+            <div class="indicatorBtn"></div>
+        </div>
+        <button class="displayPassworBtn">GENERATE PASSWORD</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
